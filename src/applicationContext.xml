@@ -18,6 +18,10 @@
 
     <bean id="myCricketCoach" class="spring.demo.one.CricketCoach">
         <property name="fortuneService" ref="myFortune"/>
+        <!--    Inject literal values    -->
+        <property name="emailAddress" value="email@email.com"/>
+        <property name="team" value="team value"/>
+
     </bean>
 
 </beans>
