@@ -16,6 +16,9 @@
         <constructor-arg ref="myFortune"></constructor-arg>
     </bean>
 
+    <bean id="myCricketCoach" class="spring.demo.one.CricketCoach">
+        <property name="fortuneService" ref="myFortune"/>
+    </bean>
 
 </beans>
 
