@@ -10,7 +10,7 @@
     <!--    define the dependency  -->
     <bean id="myFortune" class="spring.demo.one.HappyFortuneService"></bean>
 
-    <bean id="myCoach" class="spring.demo.one.TrackCoach">
+    <bean id="myCoach" class="spring.demo.one.TrackCoach" scope="prototype">
     <!--   Setup constructor injection     -->
         <constructor-arg ref="myFortune"></constructor-arg>
     </bean>
